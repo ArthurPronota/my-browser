@@ -1,8 +1,43 @@
-username = "real_name"
-password = "MyNameMy"
+[package]
+name = "my-browser"
+version = "0.1.0"
+edition = "2024"
 
-# telegraph параметры
-[telegraph]
-short_name = "my_short_name"
-author_name = "name_of_author"
-access_token = "my_tocken"
+[dependencies]
+
+# Playhard раздел
+playhard = "0.1.1"
+playhard-automation = "0.1.1"
+playhard-cdp = "0.1.1"
+playhard-launcher = "0.1.1"
+
+# Tokio раздел
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal"] }
+
+# Log раздел
+log = "0.4"
+env_logger = "0.10"
+
+# Serde
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+
+#strum = { version = "0.26", features = ["derive"] }
+strum_macros = "0.26"
+
+# Toml раздел
+toml = "0.8"
+
+# Работа с Url 
+url = "2.5"
+
+# ArrayVec
+# arrayvec = "0.7" 
+
+# Reqwest
+#reqwest = { version = "0.12", features = ["json", "socks"] }
+reqwest = { version = "0.11", features = ["json", "socks"] }
+
+# Обработчик CntrlC
+# ctrlc = "3.4"
