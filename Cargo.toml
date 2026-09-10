@@ -1,0 +1,8 @@
+username = "real_name"
+password = "MyNameMy"
+
+# telegraph параметры
+[telegraph]
+short_name = "my_short_name"
+author_name = "name_of_author"
+access_token = "my_tocken"
